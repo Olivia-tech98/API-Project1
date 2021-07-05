@@ -29,17 +29,19 @@ function fetchPokemon(event) {
 
         // create the elements
         let pokemonName = document.createElement('h1');
-        let pokemonWeight = document.createElement('p');
-        
+        let pokemonWeight = document.createElement('h2');
+        let pokemonHeight = document.createElement('p');
 
         // assign the elements information from the data we fetched
         pokemonName.innerText = data.name;
         pokemonWeight.innerText = data.weight;
+        pokemonHeight.innerText = data.height;
         
 
         // append the info for user to see
         results.appendChild(pokemonName);
         results.appendChild(pokemonWeight);
+        results.appendChild(pokemonHeight);
 
         // for(let pokemon of data) {
         //     console.log(pokemon.ability.name)
